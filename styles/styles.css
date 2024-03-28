@@ -33,14 +33,8 @@ body {
         flex-direction: row;
     }
     .sidebar > a {
-        display: block;
-        text-align: center;
         margin: auto 0;
         margin-left: 20px;
-        width: 60px;
-        height: 60px;
-        border-radius: 50px;
-        background-color: lightpink;
     }
     .main-padding {
         padding-left: 0;
