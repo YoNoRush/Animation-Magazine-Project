@@ -1,0 +1,25 @@
+/* Adds padding to content page on left to account for sidebar */
+body {
+    --sidebar-width: 80px;
+}
+.main-padding {
+    padding-left: var(--sidebar-width);
+}
+.sidebar {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: var(--sidebar-width);
+    background-color: lightcoral;
+}
+.sidebar > a {
+    margin: 0 auto;
+    margin-top: 20px;
+    display: block;
+    text-align: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    background-color: lightpink;
+}
