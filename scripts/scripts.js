@@ -19,6 +19,14 @@ function coverUp() {
     document.getElementById("screen-cover").style.bottom = "100%";
 }
 
+function toHomeFromArticle() {
+    document.getElementById("article").style.opacity = "0%";
+    document.getElementById("sidebar").style.animation = "1s ease-out sidebarOut"
+    wait(700).then(() => { 
+        window.location.href = "index.html";
+    });
+}
+
 function gotoPage(from, moveTo, destination) {
     console.log(from);
     var galleryChildren = document.getElementById("screen-gal").children;
