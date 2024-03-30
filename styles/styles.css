@@ -12,7 +12,6 @@
 
 /* Adds padding to content page on left to account for sidebar */
 body {
-    height: 100vh;
     color: white;
     display: grid;
     place-items: center;
