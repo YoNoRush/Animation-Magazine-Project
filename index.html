@@ -5,16 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+    <script src="scripts/scripts.js"></script> 
     <title>IMD1005 a4</title>
 </head>
 <body>
     <header>
-        <nav class="sidebar">
+        <!--<nav class="sidebar">
             <div class="screen-overlay"></div>
             <a href="index.html">poop</a>
             <a href="test.html">poop</a>
-        </nav>
+        </nav>-->
     </header>
+    <div id="screen-cover">
+        <div class="left">
+            <h1>PDC ZINE</h1>
+        </div>
+        <div class="right" onclick="coverUp()">
+            <img src="images/down_arrow.svg">
+        </div>
+        <div class="screen-overlay"></div>
+    </div>
     <div class="gallery main-padding" id="screen-gal">
         <div class="screen">
           <div class="screen-image" id="screen-image-anime"></div>

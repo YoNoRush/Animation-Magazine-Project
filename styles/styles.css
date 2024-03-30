@@ -18,13 +18,19 @@ body {
     place-items: center;
     background-color: rgb(var(--background-rgb));
     overflow: hidden;
+
+    font-family: "Abel", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .main-padding {
     padding-left: var(--sidebar-width);
 }
 
-/* Sidebar related stuff */
+/* 
+######################################  SIDEBAR  #####################################
+*/
 
 @keyframes sidebarIn {
     0% {
@@ -77,33 +83,18 @@ body {
     z-index: 100;
 }
 
-/* Responsive: small tablets and lower */
-@media screen and (max-width: 500px) {
-    .sidebar {
-        height: var(--sidebar-width);
-        width: 95vw;
-        left: 2.5vw;
-        margin-left: 0;
-        padding-left: 0;
-        margin-bottom: 2.5vw;
-        bottom: 0;
-        flex-direction: row;
-        animation: 0.7s ease-out sidebarInMobile;
-    }
+/*
+######################################  HTML CLASSES  #####################################
+*/
 
-    .sidebar>a {
-        margin: auto 0;
-        margin-left: 20px;
-    }
-
-    .main-padding {
-        padding-left: 0;
-        padding-bottom: var(--sidebar-width);
-    }
+h1 {
+    font-size: 100px;
+    font-weight: bold;
 }
 
-
-/* ---- CARDS ---- */
+/* 
+######################################  CARDS  #####################################
+*/
 
 
 * {
@@ -127,33 +118,37 @@ body {
     display: flex;
     gap: 3vmin;
     position: absolute;
-
+    top: 100%;
+    transition: top 1.5s;
 }
 
-/*.screen:after,
-  .screen:before {
-    content: "";
-    height: 5px;
+#screen-cover {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    gap: 3vmin;
     position: absolute;
-    z-index: 4;
-    left: 50%;
-    translate: -50% 0%;
-    background-color: white;
-  }
-  
-  .screen:before {
-    width: 15%;
-    top: 0rem;
-    border-bottom-left-radius: 1rem;
-    border-bottom-right-radius: 1rem;
-  }
-  
-  .screen:after {
-    width: 25%;
-    bottom: 0rem;
-    border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem;
-  }*/
+    bottom: 0%;
+    height: 100%;
+    transition: bottom 1.5s;
+}
+#screen-cover>.left {
+    z-index: 1000;
+    flex: 1;
+}
+#screen-cover>.left>h1 {
+    padding-top: 35vh;
+}
+#screen-cover>.right {
+    z-index: 1000;
+    cursor: pointer;
+    flex: 0.4;
+}
+#screen-cover>.right>img {
+    height: 100px;
+    padding-bottom: 20px;
+}
 
 @keyframes pan-overlay {
     from {
@@ -235,7 +230,7 @@ body {
         background-size: 425%;
     }
 }
-
+ 
 #screen-image-anime {
     background-image: url("../images/Title_IMG_Screen_Anime.jpg");
 }
@@ -350,7 +345,32 @@ body {
     text-decoration: underline;
 }
 
-@media(max-width: 700px) {
+/* 
+######################################  RESPONSIVE  #####################################
+*/
+
+@media screen and (max-width: 500px) {
+    .sidebar {
+        height: var(--sidebar-width);
+        width: 95vw;
+        left: 2.5vw;
+        margin-left: 0;
+        padding-left: 0;
+        margin-bottom: 2.5vw;
+        bottom: 0;
+        flex-direction: row;
+        animation: 0.7s ease-out sidebarInMobile;
+    }
+
+    .sidebar>a {
+        margin: auto 0;
+        margin-left: 20px;
+    }
+
+    .main-padding {
+        padding-left: 0;
+        padding-bottom: var(--sidebar-width);
+    }
     .screen {
         scale: 0.6;
         margin-bottom: 0rem;
