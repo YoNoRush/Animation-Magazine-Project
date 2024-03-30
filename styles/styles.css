@@ -1,17 +1,37 @@
 /* Adds padding to content page on left to account for sidebar */
 body {
     --sidebar-width: 80px;
+    background-color: black;
 }
 .main-padding {
     padding-left: var(--sidebar-width);
 }
+
+/* Sidebar related stuff */
+
+@keyframes sidebarIn {
+    0% {
+        left: -100px;
+    }
+    100% {
+        left: 0px;
+    }
+}
+
 .sidebar {
     position: fixed;
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    border-radius: 1rem;
+    margin-left: -1rem;
+    padding-left: 1rem;
+    margin-bottom: 0rem;
+    padding-bottom: 0rem;
+    height: 70vh;
+    bottom: 15vh;
     width: var(--sidebar-width);
     background-color: lightcoral;
+    animation: 0.7s ease-out sidebarIn;
 }
 .sidebar > a {
     margin: 0 auto;
@@ -29,6 +49,10 @@ body {
     .sidebar {
         height: var(--sidebar-width);
         width: 100vw;
+        margin-left: 0;
+        padding-left: 0;
+        margin-bottom: -1rem;
+        padding-bottom: 1rem;
         bottom: 0;
         flex-direction: row;
     }
