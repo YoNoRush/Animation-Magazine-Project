@@ -435,14 +435,10 @@ h2 {
         letter-spacing: 7px;
         font-weight: bold;
     }
-
-}
-
-@media screen and (max-width: 500px) {
     /* HTML Classes */
 
     /* Custom classes */
-    .sidebar {
+    #sidebar {
         height: var(--sidebar-width);
         width: 95vw;
         left: 2.5vw;
@@ -451,10 +447,9 @@ h2 {
         margin-bottom: 2.5vw;
         bottom: 0;
         flex-direction: row;
-        animation: 0.7s ease-out sidebarInMobile;
     }
 
-    .sidebar>a {
+    #sidebar>a {
         margin: auto 0;
     }
 
