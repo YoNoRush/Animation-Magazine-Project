@@ -7,7 +7,7 @@
 
     --blob-color-1: rgb(var(--blue-rgb));
     --blob-color-2: dodgerblue;
-    --sidebar-width: 80px;
+    --sidebar-width: 90px;
 }
 
 /* Adds padding to content page on left to account for sidebar */
@@ -101,6 +101,7 @@ h1 {
 }
 
 .screen {
+    cursor: pointer;
     height: 80vh;
     width: 35vh;
     display: flex;
