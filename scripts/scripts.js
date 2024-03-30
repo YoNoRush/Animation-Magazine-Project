@@ -3,6 +3,17 @@ function wait(ms) {
     return new Promise(time => setTimeout(time, ms));
 }
 
+// On page load
+// Checks if the last page was an article. If so, do not
+// play the sidebar in animation again.
+window.onload = function() {
+    // If we came from the homepage
+    if (window.location.search.indexOf('?fromArticle=true') !== 0) {
+        // Play sidebar in animation
+        document.getElementById("sidebar").style.animation = "0.7s ease-out sidebarIn";
+    }
+}
+
 function coverUp() {
     document.getElementById("screen-gal").style.top = "10%";
     document.getElementById("screen-cover").style.bottom = "100%";
