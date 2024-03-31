@@ -240,6 +240,15 @@ h1 {
     background-image: url("../images/Title_IMG_Screen_3D.jpg");
 }
 
+#screen-image-2d {
+    background-image: url("../images/Title_IMG_Screen_2D.jpg");
+}
+
+#screen-image-25d {
+    background-image: url("../images/Title_IMG_Screen_2.5D.jpg");
+}
+
+
 .screen>.screen-image {
     height: 100%;
     width: 100%;
@@ -336,7 +345,7 @@ h1 {
 
 .screen>.screen-content>.screen-user>.link {
     opacity: 0.8;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     text-shadow: 0px 0px 0.5rem white;
     font-weight: 400;
     letter-spacing: 0.3rem;
@@ -345,6 +354,10 @@ h1 {
 
 .screen>.screen-content>.screen-user>.link:is(:hover, :focus) {
     text-decoration: underline;
+}
+
+.card-group {
+    display: none;
 }
 
 /* 
@@ -376,5 +389,66 @@ h1 {
     .screen {
         scale: 0.6;
         margin-bottom: 0rem;
+    }
+}
+
+/* Mobile Cards */
+
+@media screen and (max-width: 500px) {
+    body {
+        overflow-x: hidden;
+    }
+    
+    .card-group {
+        display: flex;
+    }
+
+    .gallery {
+        display: none;
+    }
+    
+    #screen-gal {
+        display: none;
+        gap: 0vmin;
+    }
+
+    #screen-image-anime {
+        background:
+        linear-gradient(
+          rgba(0, 0, 0, 0.6), 
+          rgba(0, 0, 0, 0.6)
+        ),
+        url("../images/Title_IMG_Screen_Anime.jpg");
+    }
+
+    .screen {
+        height: 180vmin;
+        width: 100vmin;
+        aspect-ratio: 5 / 7;
+    }
+
+    .screen>.screen-image {
+        opacity: 1;
+    }
+    
+    .card-group {
+        position: relative;
+        right: 0.5%;
+        bottom: 10%;
+    }
+
+    .card-group > .screen:nth-child(2) {
+        transform: translateX(-160%) rotate(-3deg);
+        z-index: -1;
+    }
+
+    .card-group > .screen:nth-child(3) {
+        transform: translate(-330%, -1.5%) rotate(-3deg);
+        z-index: -2;
+    }
+
+    .card-group > .screen:nth-child(4) {
+        transform: translate(-490%, -3%) rotate(2deg);
+        z-index: -3;
     }
 }
