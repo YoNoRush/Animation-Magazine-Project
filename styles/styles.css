@@ -130,6 +130,7 @@ body {
 }
 
 #article {
+    width: 100%;
     animation: articleIn 1s;
     transition: opacity 1s;
 }
