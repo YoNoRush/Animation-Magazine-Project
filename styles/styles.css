@@ -160,8 +160,11 @@ h2 {
     box-sizing: border-box;
 }
 
-.screen {
+.clickable {
     cursor: pointer;
+}
+
+.screen {
     height: 80vh;
     width: 35vh;
     display: flex;
