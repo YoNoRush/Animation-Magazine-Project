@@ -4,8 +4,7 @@ body {
 
 h1 {
     font-family: "hiragino-kaku-gothic-pron", sans-serif;
-    display: flex;
-    text-align: center;
+    position: relative;
     margin-top: 100px;
     font-size: 4vw;
     font-weight: 600;
