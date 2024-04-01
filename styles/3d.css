@@ -137,9 +137,16 @@ p {
     margin-bottom: 60px;
 }
 
-.section-grid-3 {
+.section-grid-4-1 {
     display:grid;
-    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-columns: 4fr 1fr;
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+.section-grid-2-3 {
+    display:grid;
+    grid-template-columns: 2fr 3fr;
     gap: 40px;
     margin-bottom: 60px;
 }
@@ -156,6 +163,9 @@ p {
     object-fit: cover;
     opacity: 40%;
 }
+.section-padding {
+    padding-bottom: 200px;
+}
 .section-vid-padding {
     padding-bottom: 600px;
 }
@@ -163,4 +173,10 @@ p {
     position: relative;
     top: -60%;
     text-shadow: 0px 0px 20px black;
+}
+.article-justify {
+    text-align: justify;
+}
+.highlight {
+    color: rgb(243, 178, 0);
 }
