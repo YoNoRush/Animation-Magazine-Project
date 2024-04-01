@@ -18,6 +18,17 @@ h1 {
     -webkit-text-stroke-color: #ffffff;*/
 }
 
+hr {
+    border: 1.5px solid #fde0ba;
+    color: #fde0ba;
+}
+
+.s-1 > hr {
+    width: 400px;
+    position: relative;
+    left: 20%;
+}
+
 .head-image {
     display: block;
     margin-left: auto;
@@ -474,6 +485,11 @@ h1 {
 .s2-1{
     display: flex;
     align-items: row;
+}
+
+.s2-2 {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
 }
 
 .section-2-img-1{
