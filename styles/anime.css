@@ -524,7 +524,7 @@ hr {
 
 .section-2-img-2{
     display: flex;
-    width: 50%;
+    width: 75%;
     margin:auto;
 }
 
@@ -550,4 +550,20 @@ hr {
 
 .section-2-img-3-text{
     display: flex;
+}
+
+.section-3-img-1-text {
+    display: flex;
+}
+
+.section-3-img-1{
+    display: flex;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.s-3 {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
 }
