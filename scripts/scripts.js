@@ -20,7 +20,8 @@ function coverUp() {
 }
 
 function toHomeFromArticle() {
-    document.getElementById("article").style.opacity = "0%";
+    // 1.5s to allow additional time for article to stay blacked out
+    document.getElementById("article").style.animation = "1.5s ease-out articleOut"
     document.getElementById("sidebar").style.animation = "1s ease-out sidebarOut"
     wait(700).then(() => { 
         window.location.href = "index.html";

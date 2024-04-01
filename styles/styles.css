@@ -115,6 +115,10 @@ body {
     background-position: 70% 10%;
 }
 
+.sidebar-button-selected {
+    border: 2px solid white;
+}
+
 /*
 ######################################  ARTICLES  ####################################
 */
@@ -123,15 +127,28 @@ body {
     0% {
         opacity: 0%;
     }
+    /* avoids any jumps from the css loading interrupting the smooth transition */
+    10% {
+        opacity: 0%;
+    }
 
     100% {
         opacity: 100%;
     }
 }
 
+@keyframes articleOut {
+    0% {
+        opacity: 100%;
+    }
+    50% {
+        opacity: 0%;
+    }
+}
+
 #article {
     width: 100%;
-    animation: articleIn 1s;
+    animation: articleIn 2s;
     transition: opacity 1s;
 }
 
