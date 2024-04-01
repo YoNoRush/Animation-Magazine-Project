@@ -5,6 +5,8 @@ body {
 .top_part
 {
     background-image: url("../images/bg1.jpg");
+    background-size: auto;
+    -webkit-background-size: cover;
 }
 
 .title
