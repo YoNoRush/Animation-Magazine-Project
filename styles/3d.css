@@ -23,8 +23,8 @@ h1 {
 }
 
 .fall2 {
-    position: absolute;
-    top: -240px;
+    position: relative;
+    top: -264px;
     opacity: 30%;
     color: rgb(253, 75, 75);
     z-index: -10;
@@ -101,7 +101,9 @@ p {
 }
 
 .title {
-    padding-top: 100px;
+    padding-top: 120px;
+    /* adjust for relative pos divs */
+    margin-bottom: -80px;
 }
 
 .threed-article {
