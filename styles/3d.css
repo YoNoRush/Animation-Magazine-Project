@@ -15,7 +15,7 @@ h1 {
 
 .fall1 {
     position: relative;
-    top: -144px;
+    top: -120px;
     opacity: 70%;
     color: rgb(78, 78, 199);
     z-index: -5;
@@ -24,7 +24,7 @@ h1 {
 
 .fall2 {
     position: relative;
-    top: -264px;
+    top: -240px;
     opacity: 30%;
     color: rgb(253, 75, 75);
     z-index: -10;

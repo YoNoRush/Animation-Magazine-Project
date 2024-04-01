@@ -137,6 +137,15 @@ body {
     }
 }
 
+@keyframes articleOut {
+    0% {
+        opacity: 100%;
+    }
+    50% {
+        opacity: 0%;
+    }
+}
+
 #article {
     width: 100%;
     animation: articleIn 2s;
