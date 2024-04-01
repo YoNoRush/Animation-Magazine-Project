@@ -127,7 +127,7 @@ p {
     font-weight: bolder;
     left: 30px;
     top: 30px;
-    width: 500px;
+    width: 60%;
 }
 
 .section-grid {
@@ -149,6 +149,10 @@ p {
     grid-template-columns: 2fr 3fr;
     gap: 40px;
     margin-bottom: 60px;
+}
+
+.section-grid, .section-grid-2-3, .section-grid-4-1 {
+    max-width: 95%;
 }
 
 .section-vid {
@@ -179,4 +183,89 @@ p {
 }
 .highlight {
     color: rgb(243, 178, 0);
+}
+
+.body-h2 {
+    text-align: left;
+    padding-bottom: 30px;
+}
+
+/* 
+######################################  RESPONSIVE  #####################################
+*/
+
+@media screen and (max-width: 1000px) {
+    h1 {
+        font-size: 70px;
+        letter-spacing: -4px;
+        text-wrap: nowrap;
+        animation: none;
+    }
+    .section-grid, .section-grid-2-3, .section-grid-4-1 {
+        max-width: 90%;
+    }
+    .section-grid-4-1 {
+        grid-template-columns: 2fr 1fr;
+    }
+    .fall1 {
+        top: -70px;
+        animation: none;
+    }
+    .fall2 {
+        top: -140px;
+        animation: none;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .section-vid>h1 {
+        scale: 0.7;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .section-vid>h1 {
+        scale: 0.8;
+    }
+    .section-grid, .section-grid-2-3, .section-grid-4-1 {
+        display: block;
+        max-width: 90%;
+        margin: 0 auto;
+    }
+    
+    h1 {
+        font-size: 50px;
+        letter-spacing: -4px;
+        text-wrap: nowrap;
+        animation: none;
+    }
+    h2 {
+        letter-spacing: 6px;
+        font-size: 18px;
+    }
+    .fall1 {
+        top: -50px;
+        animation: none;
+    }
+    .fall2 {
+        top: -100px;
+        animation: none;
+    }
+
+    .section-vid {
+        width: 100vw;
+        height: 400px;
+        padding-top: 80px;
+    }
+    .section-padding {
+        padding-bottom: 200px;
+    }
+    .section-vid-padding {
+        padding-bottom: 500px;
+    }
+
+    .main-image {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
 }
