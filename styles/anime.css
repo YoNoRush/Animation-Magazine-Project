@@ -64,5 +64,14 @@ h2:nth-child(2) {
     margin-right: auto;
     position: relative;
     bottom: 23vw;
-    width: 60%;
+    width: 75%;
+}
+
+.section-1-text {
+    display: flex;
+    align-items: center;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
 }
