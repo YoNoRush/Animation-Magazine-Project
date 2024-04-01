@@ -123,6 +123,10 @@ body {
     0% {
         opacity: 0%;
     }
+    /* avoids any jumps from the css loading interrupting the smooth transition */
+    10% {
+        opacity: 0%;
+    }
 
     100% {
         opacity: 100%;
@@ -131,7 +135,7 @@ body {
 
 #article {
     width: 100%;
-    animation: articleIn 1s;
+    animation: articleIn 2s;
     transition: opacity 1s;
 }
 
