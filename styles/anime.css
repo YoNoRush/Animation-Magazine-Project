@@ -434,4 +434,14 @@ h1 {
 
 .kanji {
     position: relative;
+    text-align: center;
+}
+
+.s-1 img{
+    display: block;
+    display: flex;
+    align-items: center;
+    width: 70%;
+    margin:auto;
+    position: relative;
 }
