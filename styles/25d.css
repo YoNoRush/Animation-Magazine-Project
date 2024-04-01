@@ -1,8 +1,68 @@
+body {
+    overflow: auto;
+}
+
+.top_part
+{
+    background-image: url("../images/bg1.jpg");
+}
+
 .title
 {
     display: block;
+    margin-top: 15px;
     margin-left: auto;
     margin-right: auto;
     position: relative;
     width: 30vw;
 }
+
+hr
+{
+    margin: 25px;
+}
+
+h3
+{
+    font-size: 35px;
+    font-family: bangers;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+p
+{
+    font-family: action man;
+    font-size: 25px;
+    
+}
+
+.step_by_step
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+.explanation
+{
+    text-justify: inter-word;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+.unique_exa
+{
+    border: 5px solid white;
+    margin-top: 25px;
+    width: 20vw;
+}
+
+.examples_appeal
+{
+    border: 5px solid white;
+    margin-top: 25px;
+    width: 20vw;
+    margin-bottom: 25px;
+}
+
