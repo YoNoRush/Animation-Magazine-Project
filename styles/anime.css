@@ -445,3 +445,74 @@ h1 {
     margin:auto;
     position: relative;
 }
+
+.section-1-text {
+    display: flex;
+    align-items: center;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    text-align: center;
+}
+
+.s-1 img{
+    display: block;
+    display: flex;
+    align-items: center;
+    width: 70%;
+    margin:auto;
+    position: relative;
+}
+
+.s-2{
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+}
+    
+.s2-1{
+    display: flex;
+    align-items: row;
+}
+
+.section-2-img-1{
+    display: flex;
+    width: 50%;
+    margin-left: auto;
+}
+
+.section-2-img-1-text{
+    display: flex;
+    justify-content: left;
+}
+
+.section-2-img-2{
+    display: flex;
+    width: 50%;
+    margin:auto;
+}
+
+.section-2-img-2-text{
+    display: flex;
+}
+
+.s2-3{
+    display: flex;
+    align-items: row;
+    padding-left: 10px;
+}
+
+.s2-3p{
+    text-align: right;
+}
+
+.section-2-img-3{
+    display: flex;
+    width: 50%;
+    margin-right: auto;
+}
+
+.section-2-img-3-text{
+    display: flex;
+}
