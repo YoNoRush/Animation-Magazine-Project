@@ -652,3 +652,56 @@ p {
 .section-3-img-3-text{
     display: flex;
 }
+
+@media screen and (max-width: 500px) {
+    .section-1{
+        display: block;
+        flex-direction: column;
+    }
+    .section-2{
+        display: block;
+        flex-direction: column;
+    }
+    .section-3{
+        display: block;
+        flex-direction: column;
+    }
+    .section-1-text{
+        display: block;
+        flex-direction: column;
+    }
+    .s-1{
+        display: block;
+        flex-direction: column;
+    }
+    .s2-2{
+        display: none;
+    }
+    .section-2-img-2-text-1{
+        display: none;
+    }
+    .section-2-img-2-text-2{
+        display: none;
+    }
+    .s3-2{
+        display: none;
+    }
+    .section-vid {
+        display: none;
+        }
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 232, 201);
+  text-align: center;
+}
+
+.footer {
+    padding: 20px;
+}
+
