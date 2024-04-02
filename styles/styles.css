@@ -103,16 +103,38 @@ body {
     cursor: pointer;
 }
 
+#home-sidebar-button{
+    background-image: url("../images/pdc_logo-min.png");
+    background-size: cover;
+    background-size: 100%;
+    background-position: center;
+}
+
+
+#twopointfived-sidebar-button {
+    background-image: url("../images/miles.jpg");
+    background-size: cover;
+    background-size: 125%;
+    background-position: center;
+}
+
 #anime-sidebar-button {
     background-image: url("../images/Title_IMG_Screen_Anime.jpg");
     background-size: cover;
     background-size: 250%;
     background-position: 70% 10%;
 }
+
 #threed-sidebar-button {
     background-image: url("../images/Title_IMG_Screen_3D.jpg");
     background-size: 250%;
     background-position: 70% 10%;
+}
+
+#credits-sidebar-button{
+    background-image: url("../images/credits.jpg");
+    background-size: 150%;
+    background-position: center;
 }
 
 .sidebar-button-selected {
