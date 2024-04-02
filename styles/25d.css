@@ -68,3 +68,60 @@ p
     margin-bottom: 25px;
 }
 
+.examples_of_25d
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.poster_stack
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+.poster_sections
+{
+    width: 20vw;
+    border: 5px solid white;
+    margin: 10px
+}
+
+@media screen and (max-width: 800px){
+    .poster_stack
+    {
+        flex-direction: column;
+        width:100%;
+    }
+
+    .poster_sections
+    {
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .step_by_step
+    {
+        flex-direction: column;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .unique_exa
+    {
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .examples_appeal
+    {
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
