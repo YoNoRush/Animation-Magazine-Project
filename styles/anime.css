@@ -68,15 +68,15 @@ p {
 }
 
 .section-1 > .section-vid {
-    top: 55vw;
+    top: 880px;
 }
 
 .section-2 > .section-vid {
-    top: 127vw;
+    top: 2030px;
 }
 
 .section-3 > .section-vid {
-    top: 215vw;
+    top: 3430px;
 }
 
 /*glitch effect*/
